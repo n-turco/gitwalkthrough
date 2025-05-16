@@ -10,7 +10,7 @@ int main() {
 	int choice;
 	display_menu();
 	printf("Enter your choice (1-5): ");
-	scanf("%d", &choice);
+	scanf_s("%d", &choice);
 	switch (choice) {
 	case 1:
 		greet();
@@ -24,7 +24,7 @@ int main() {
 	case 4: {
 		double radius;
 		printf("Enter the radius of the circle: ");
-		scanf("%lf", &radius);
+		scanf_s("%lf", &radius);
 		printf("The area of the circle is %.2f\n", calculate_area(radius));
 		break;
 	}
@@ -42,3 +42,4 @@ int subtract(int a, int b) {
 		return a - b;
 	}
 }
+
