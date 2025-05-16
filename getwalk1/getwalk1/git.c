@@ -33,3 +33,12 @@ int main() {
 	}
 	return 0;
 }
+
+int subtract(int a, int b) {
+	if (b == 0) {
+		printf("Do not divide by zero.");
+	}
+	else {
+		return a - b;
+	}
+}
